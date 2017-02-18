@@ -1,4 +1,4 @@
-type Weapon {
+type Weapon = {
     name: "Magic Sword" | "Axe"| "Sword" | "Magic Staff",
     attackPoints: 5 | 10 | 15
 }
@@ -30,6 +30,6 @@ let mageWarrior: Mage & Warrior = {
     }
 }
 
-function printCharInfo(character: Warrior | Mage): void {
+function printCharInfo(character: Mage | Warrior): void {
     console.log(character.name);
 }
