@@ -12,7 +12,7 @@ export function feed(person: Person): void {
         person.eat("Pork");
     }
     if (person instanceof Vegan) {
-        person.eat("Cabbage")
+        person.eat("Cabbage");
     }
 }
 
@@ -41,7 +41,7 @@ export class Omnivore extends Vegetarian {
 
 let georgi = new Vegan("Georgi");
 let vanya = new Vegetarian("Vanya");
-let bobi = new Omnivore("Borislav")
+let bobi = new Omnivore("Borislav");
 
 let people = [georgi, vanya, bobi];
 
