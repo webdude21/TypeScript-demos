@@ -19,4 +19,4 @@ export class AdvancedRunner extends Runner {
 
 let advancedRunner = new AdvancedRunner();
 
-advancedRunner.start().stop(); // no access to pause  
+advancedRunner.start().stop(); // no access to pause

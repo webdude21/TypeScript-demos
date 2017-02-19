@@ -1,4 +1,4 @@
-import { Deprecated, Freeze, Log } from './decorators';
+import { Deprecated, Freeze, Log } from "./decorators";
 
 @Freeze
 export class MyVeryImportantClass {

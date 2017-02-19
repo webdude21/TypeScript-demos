@@ -1,4 +1,4 @@
-import { CountInstances } from './decorators';
+import { CountInstances } from "./decorators";
 
 @CountInstances
 export class Cat {
