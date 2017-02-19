@@ -1,9 +1,9 @@
-type Weapon = {
-    name: "Magic Sword" | "Axe"| "Sword" | "Magic Staff",
+export type Weapon = {
+    name: "Magic Sword" | "Axe" | "Sword" | "Magic Staff",
     attackPoints: 5 | 10 | 15
 };
 
-interface Mage {
+export interface Mage {
     name: string;
     HP: number;
     MP: number;
@@ -11,14 +11,24 @@ interface Mage {
     weapon: Weapon;
 }
 
-interface Warrior {
+export interface Warrior {
     name: string;
     HP: number;
     weapon: Weapon;
     dexterity: number;
 }
 
-let mageWarrior: Mage & Warrior = {
+let mageWarriorUnion: Mage | Warrior = {
+    dexterity: 10,
+    HP: 10,
+    name: "George",
+    weapon: {
+        attackPoints: 10,
+        name: "Sword"
+    }
+}
+
+let mageWarriorIntersection: Mage & Warrior = {
     name: "Charley",
     dexterity: 4,
     intelligence: 5,
@@ -30,6 +40,9 @@ let mageWarrior: Mage & Warrior = {
     }
 };
 
-function printCharInfo(character: Mage | Warrior): void {
+export function printCharInfo(character: Mage | Warrior): void {
     console.log(character.name);
 }
+
+console.log(mageWarriorUnion.name);
+console.log(mageWarriorIntersection.name);
