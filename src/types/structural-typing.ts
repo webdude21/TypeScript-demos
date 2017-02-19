@@ -1,7 +1,7 @@
 export interface Human {
-    firstName: string,
-    lastName: string,
-    age: number
+    firstName: string;
+    lastName: string;
+    age: number;
 }
 
 export class Vegetarian {

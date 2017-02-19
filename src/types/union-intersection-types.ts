@@ -1,21 +1,21 @@
 type Weapon = {
     name: "Magic Sword" | "Axe"| "Sword" | "Magic Staff",
     attackPoints: 5 | 10 | 15
-}
+};
 
 interface Mage {
-    name: string,
-    HP: number,
-    MP: number,
-    intelligence: number
-    weapon: Weapon
+    name: string;
+    HP: number;
+    MP: number;
+    intelligence: number;
+    weapon: Weapon;
 }
 
 interface Warrior {
-    name: string,
-    HP: number,
-    weapon: Weapon,
-    dexterity: number
+    name: string;
+    HP: number;
+    weapon: Weapon;
+    dexterity: number;
 }
 
 let mageWarrior: Mage & Warrior = {
@@ -28,7 +28,7 @@ let mageWarrior: Mage & Warrior = {
         attackPoints: 15,
         name: "Magic Sword"
     }
-}
+};
 
 function printCharInfo(character: Mage | Warrior): void {
     console.log(character.name);
