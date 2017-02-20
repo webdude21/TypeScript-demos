@@ -26,7 +26,7 @@ let mageWarriorUnion: Mage | Warrior = {
         attackPoints: 10,
         name: "Sword"
     }
-}
+};
 
 let mageWarriorIntersection: Mage & Warrior = {
     name: "Charley",
