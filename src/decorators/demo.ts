@@ -15,8 +15,12 @@ export function demonstrate(): void {
 
     frozen.doStuff();
 
-    // trying to replace the doStuff function directly on the prototype to demonstrate that the object is in fact frozen
-    MyVeryImportantClass.prototype.doStuff = function () {
-        console.log("Do other stuff");
-    };
+    try {
+        // trying to replace the doStuff function directly on the prototype to demonstrate that the object is in fact frozen
+        MyVeryImportantClass.prototype.doStuff = function () {
+            console.log("Do other stuff");
+        };
+    } catch (err) {
+        console.log(`Couldn't extend the prototype. It's truly frozen. -> ${err}`);
+    }
 }
