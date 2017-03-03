@@ -10,11 +10,13 @@ export class MyVeryImportantClass {
     }
 }
 
-let frozen = new MyVeryImportantClass();
+export function demonstrate(): void {
+    let frozen = new MyVeryImportantClass();
 
-frozen.doStuff();
+    frozen.doStuff();
 
-// trying to replace the doStuff function directly on the prototype to demonstrate that the object is in fact frozen
-MyVeryImportantClass.prototype.doStuff = function(){
-    console.log("Do other stuff");
-};
+    // trying to replace the doStuff function directly on the prototype to demonstrate that the object is in fact frozen
+    MyVeryImportantClass.prototype.doStuff = function () {
+        console.log("Do other stuff");
+    };
+}

@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es2017",
     "module": "commonjs",
     "moduleResolution": "node",
+    "types": ["node"],
     "outDir": "./out",
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,

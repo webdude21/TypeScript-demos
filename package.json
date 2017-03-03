@@ -1,0 +1,20 @@
+{
+  "name": "typescript-demos",
+  "version": "1.0.0",
+  "description": "Store TypeScript demos for the presentation",
+  "main": "./out/index.js",
+  "scripts": {
+    "start": "node ./out/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdude21/TypeScript-demos.git"
+  },
+  "author": "webdude",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webdude21/TypeScript-demos/issues"
+  },
+  "homepage": "https://github.com/webdude21/TypeScript-demos#readme"
+}
