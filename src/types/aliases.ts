@@ -6,7 +6,7 @@ export type MageWarriorIntersection = Mage & Warrior;
 
 let mageWarriorUnion: MageWarriorUnion = {
     dexterity: 10,
-    HP: 10,
+    hp: 10,
     name: "George",
     weapon: {
         attackPoints: 5,
@@ -18,8 +18,8 @@ let mageWarriorIntersection: MageWarriorIntersection = {
     name: "Charley",
     dexterity: 4,
     intelligence: 5,
-    HP: 10,
-    MP: 5,
+    hp: 10,
+    mp: 5,
     weapon: {
         attackPoints: 15,
         name: "Magic Sword"
