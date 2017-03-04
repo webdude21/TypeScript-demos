@@ -5,7 +5,7 @@ export interface Person {
     age: number;
 }
 
-export function demonstrate(): void {
+let stackDemo = function () {
     let stack = new Stack<Person>();
     let goshko = { name: "Goshko", age: 21 };
     stack.push(goshko);
@@ -22,4 +22,8 @@ export function demonstrate(): void {
     for (let person of stack) {
         console.log(person);
     }
+};
+
+export function demonstrate(): void {
+    stackDemo();
 }
