@@ -8,6 +8,26 @@ export class Vegetarian {
     constructor(public firstName: string, public lastName: string, public age: number) { }
 }
 
-let student: Human;
+// here the interface Human has the same 'signature' (members) as Vegetarian so the assignment is safe.
+// you can safely use the Vegetarian everywhere the Human interface is required.
+let student: Human = new Vegetarian("Gergi", "Georgiev", 12);
 
-student = new Vegetarian("Gergi", "Georgiev", 12);
+// interface can extend a class, thus reciving it's interface
+export interface Vegan extends Vegetarian {
+    favoriteVegetable: string;
+}
+
+let vegan: Vegan = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 32,
+    favoriteVegetable: "Stuff"
+};
+
+// a class can also implement another class, thus using it as interface.
+// than the compiler forces you to have the same members as the other class (makes sense)
+export class AlternativeVegetarian implements Vegetarian { // I really ran out of good names here
+    public firstName: string;
+    public lastName: string;
+    public age: number;
+}
