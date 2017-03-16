@@ -1,4 +1,4 @@
-interface String {
+declare interface String {
     capitalize: () => string;
 }
 

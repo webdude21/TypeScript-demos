@@ -1,6 +1,6 @@
 /**
  * Deprecated Annotation
- * @param version in which the following member is Deprecated. 
+ * @param version in which the following member is Deprecated.
  */
 export function Deprecated(version: string) {
     return function (target: Object, propertyKey: string, descriptor: PropertyDescriptor): void {
