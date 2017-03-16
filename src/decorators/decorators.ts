@@ -13,6 +13,11 @@ export function Deprecated(version: string) {
  * It logs something to the console when the method marked with it is invoked.
  */
 export function Log() {
+    /**
+     * PropertyDescriptor allows you to access the actual value of the property
+     * propertyKey the key of the annotated member in the Object
+     * target is the object itself
+     */
     return function (target: Object, propertyKey: string, descriptor: PropertyDescriptor): void {
         console.log(`Method '${propertyKey}' called`);
     };
