@@ -8,8 +8,9 @@ export class Vegetarian {
     constructor(public firstName: string, public lastName: string, public age: number) { }
 }
 
-// here the interface Human has the same 'signature' (members) as Vegetarian so the assignment is safe.
-// you can safely use the Vegetarian everywhere the Human interface is required.
+// if the interface (public members) of two types match, they can be used interchangeably
+// here the interface Human has the same 'signature' (members) as Vegetarian so the assignment is safe
+// you can safely use the Vegetarian everywhere the Human interface is required and vice versa
 let student: Human = new Vegetarian("Gergi", "Georgiev", 12);
 
 // interface can extend a class, thus reciving it's interface
