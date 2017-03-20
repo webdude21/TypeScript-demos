@@ -1,3 +1,4 @@
+import { demonstrateBiVariance } from './variance';
 import { Stack } from './stack';
 
 export interface Person {
@@ -26,4 +27,5 @@ let stackDemo = function () {
 
 export function demonstrate(): void {
     stackDemo();
+    demonstrateBiVariance();
 }

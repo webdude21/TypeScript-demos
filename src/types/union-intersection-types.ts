@@ -1,4 +1,4 @@
-import { merge } from '../generics/generic-method';
+import { merge } from '../generics/generic-functions';
 
 export type Weapon = {
     name: "Magic Sword" | "Axe" | "Sword" | "Magic Staff",
