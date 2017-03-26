@@ -1,4 +1,4 @@
-export function merge<T, U>(first: T, second: U) {
+export function merge<T, U>(first: T, second: U): T & U {
     let result = <T & U>{};
 
     for (let id in first) {
