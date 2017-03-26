@@ -28,3 +28,10 @@ export function printFirstLetter(str: string | undefined | null): void {
 export function justRemoveNull(str: string | undefined | null) {
     return str || "";
 }
+
+export function nonNullArgFunc(str: string) {
+    return str;
+}
+
+// when trying to pass null you get compiler error (if you've enabled the flag "strictNullChecks")
+// nonNullArgFunc(null);
