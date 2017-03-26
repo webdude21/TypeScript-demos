@@ -1,5 +1,5 @@
 import { demonstrateBiVariance } from './variance';
-import { Stack } from './stack';
+import { Stack } from './generic-classes';
 
 export interface Person {
     name: string;
