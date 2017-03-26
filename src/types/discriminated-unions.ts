@@ -1,20 +1,20 @@
 type Shape = Square | Rectangle | Circle;
 
-interface Square {
+export interface Square {
     type: "square";
     size: number;
 }
-interface Rectangle {
+export interface Rectangle {
     type: "rectangle";
     width: number;
     height: number;
 }
-interface Circle {
+export interface Circle {
     type: "circle";
     radius: number;
 }
 
-function area(shape: Shape) {
+export function area(shape: Shape) {
     switch (shape.type) {
         case "square": {
             return shape.size * shape.size;

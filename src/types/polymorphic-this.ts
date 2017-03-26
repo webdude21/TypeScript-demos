@@ -1,4 +1,3 @@
-
 export class Runner {
     start(): this {
         console.log("running");
@@ -21,3 +20,5 @@ export class AdvancedRunner extends Runner {
 let advancedRunner = new AdvancedRunner();
 
 advancedRunner.start().stop().pause().start();
+
+// show demo without polymorphic this;
