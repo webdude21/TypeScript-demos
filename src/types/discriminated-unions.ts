@@ -1,4 +1,4 @@
-type Shape = Square | Rectangle | Circle;
+export type Shape = Square | Rectangle | Circle;
 
 export interface Square {
     type: "square";
