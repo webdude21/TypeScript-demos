@@ -73,3 +73,5 @@ export function demonstrate(): void {
     console.log(mageWarriorIntersection.name);
     console.log(merged.name);
 }
+
+export { warrior }
