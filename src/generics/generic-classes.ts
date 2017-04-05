@@ -1,4 +1,4 @@
-export class Stack<T extends Object> {
+export class Stack<T> {
     private internalStore = new Array<T>();
     push = (item: T) => this.internalStore.push(item);
     pop = (): T | undefined => this.internalStore.shift();
