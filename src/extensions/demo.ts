@@ -1,4 +1,4 @@
-import { AdvancedRunner } from '../types/polymorphic-this';
+import { AdvancedRunner } from '../classes/polymorphic-this';
 import "./runner-extensions";
 import "./string.extensions";
 

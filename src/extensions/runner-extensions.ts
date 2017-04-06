@@ -1,11 +1,11 @@
-import { AdvancedRunner } from '../types/polymorphic-this';
+import { AdvancedRunner } from '../classes/polymorphic-this';
 
 /**
  * In JavaScript you can usually extend any type you want. There's really nothing stopping you.
  * But when you have a type system, there needs to be a way for you to 'register' this extension with the type system.
  * TypeScript offers such a way (demonstrated below).
  */
-declare module '../types/polymorphic-this' {
+declare module '../classes/polymorphic-this' {
     export interface AdvancedRunner {
         yield: () => void;
     }
