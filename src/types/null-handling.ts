@@ -34,4 +34,4 @@ export function nonNullArgFunc(str: string) {
 }
 
 // when trying to pass null you get compiler error (if you've enabled the flag "strictNullChecks")
-// nonNullArgFunc(null);
+nonNullArgFunc(null);
