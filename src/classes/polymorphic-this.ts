@@ -20,5 +20,3 @@ export class AdvancedRunner extends Runner {
 let advancedRunner = new AdvancedRunner();
 
 advancedRunner.start().stop().pause().start();
-
-// show demo without polymorphic this;
