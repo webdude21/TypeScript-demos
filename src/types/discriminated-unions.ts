@@ -18,12 +18,12 @@ export function area(shape: Shape) {
     switch (shape.type) {
         case "square": {
             return shape.size * shape.size;
-        };
+        }
         case "rectangle": {
             return shape.height * shape.width;
-        };
+        }
         case "circle": {
             return Math.PI * shape.radius ** 2;
-        };
+        }
     }
 }
