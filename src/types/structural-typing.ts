@@ -13,7 +13,7 @@ export class Vegetarian {
 // you can safely use the Vegetarian everywhere the Human interface is required and vice versa
 let student: Human = new Vegetarian("Gergi", "Georgiev", 12);
 
-// interface can extend a class, thus reciving it's interface
+// interface can extend a class, thus receiving it's interface
 export interface Vegan extends Vegetarian {
     favoriteVegetable: string;
 }
