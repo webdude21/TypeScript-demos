@@ -12,9 +12,9 @@ function pluck<T, K extends keyof T>(object: T, ...keyNames: K[]): T[K][] {
 let numbers: number[] = pluck(warrior, 'hp', 'dexterity');
 
 // this type now accepts as value of the keys of the warrior
-let allWarriorKeys: keyof Warrior;
+type WarriorKeys = keyof Warrior;
 
 // show auto-completion
-allWarriorKeys = "name";
+let warriorKey: WarriorKeys = 'dexterity';
 
-console.log(numbers);
+console.log(warriorKey, numbers);

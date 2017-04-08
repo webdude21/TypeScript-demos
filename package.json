@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/webdude21/TypeScript-demos/issues"
   },
-  "homepage": "https://github.com/webdude21/TypeScript-demos#readme"
+  "homepage": "https://github.com/webdude21/TypeScript-demos#readme",
+  "devDependencies": {
+    "@types/node": "^7.0.12"
+  }
 }
