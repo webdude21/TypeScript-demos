@@ -8,10 +8,7 @@ export default (state: string[] = [], action: CartActionTypes) => {
             return state.filter(id => id !== action.itemId);
         case "CLEAR_CART":
             return state = [];
-        default: {
-            // what action ends up here?
-            console.log(action);
+        default:
             return state;
-        }
     }
 };
