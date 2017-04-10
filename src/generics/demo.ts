@@ -17,12 +17,6 @@ let stackDemo = function () {
     if (person) {
         console.log(`I'm ${person.name} and I'm ${person.age} years old!`);
     }
-
-    console.log(`The stack {`);
-
-    for (let person of stack) {
-        console.log(person);
-    }
 };
 
 export function demonstrate(): void {
