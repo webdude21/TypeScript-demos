@@ -1,7 +1,6 @@
 import { CartActionTypes } from './cart.actions';
 
-export default (state = [], action: CartActionTypes) => {
-
+export default (state: string[] = [], action: CartActionTypes) => {
     switch (action.type) {
         case "ADD_TO_CART":
             return [...state, action.itemId];
